@@ -277,7 +277,7 @@
     const nom = document.getElementById('nom').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    messageInfo.textContent = 'Envoi en cours...';
+    messageInfo.textContent = "Erreur : " + error.message;
 
     const { error } = await supabase
       .from('suggestions')
