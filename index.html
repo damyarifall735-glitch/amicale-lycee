@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amicale des Élèves</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #102b50;
+      color: white;
+      padding: 22px 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 25px;
+    }
+
+    header p {
+      color: #d5e5f7;
+    }
+
+    nav {
+      background: #174477;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 7px 10px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      background: #2866a5;
+      border-radius: 5px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #102b50, #2877b8);
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .section {
+      padding: 35px 18px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #174477;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #00000012;
+    }
+
+    .card h3 {
+      color: #174477;
+      margin-bottom: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #174477;
+      color: white;
+      text-decoration: none;
+      padding: 10px 17px;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+
+    .button:hover {
+      background: #2866a5;
+    }
+
+    .notice {
+      background: white;
+      padding: 18px;
+      border-left: 4px solid #2877b8;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 15px;
+      border: 1px solid #ccd4df;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    textarea {
+      min-height: 110px;
+    }
+
+    button {
+      background: #174477;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #102b50;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #d5e5f7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>AMICALE DES ÉLÈVES</h1>
+    <p>Ensemble pour une vie scolaire plus dynamique</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#clubs">Nos clubs</a>
+    <a href="#championnat">Championnat</a>
+    <a href="#actualites">Actualités</a>
+    <a href="#suggestions">Suggestions</a>
+  </nav>
+
+  <section class="hero" id="accueil">
+    <h2>Bienvenue sur le site de l'Amicale</h2>
+    <p>
+      Retrouvez toutes les activités, les projets,
+      les compétitions et les informations de notre lycée.
+      Votre participation fait vivre notre Amicale !
+    </p>
+    <a class="button" href="#clubs">Découvrir nos clubs</a>
+  </section>
+
+  <section class="section" id="clubs">
+    <h2>Nos quatre clubs</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Club 1</h3>
+        <p>Présentation et activités du premier club.</p>
+      </div>
+
+      <div class="card">
+        <h3>Club 2</h3>
+        <p>Présentation et activités du deuxième club.</p>
+      </div>
+
+      <div class="card">
+        <h3>Club 3</h3>
+        <p>Présentation et activités du troisième club.</p>
+      </div>
+
+      <div class="card">
+        <h3>Club 4</h3>
+        <p>Présentation et activités du quatrième club.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="championnat">
+    <h2>Le championnat</h2>
+
+    <div class="card">
+      <h3>Championnat interclubs</h3>
+      <p>Suivez les rencontres entre les quatre clubs.</p>
+      <p>Calendrier, scores, classement et historique des matchs seront disponibles ici.</p>
+    </div>
+  </section>
+
+  <section class="section" id="actualites">
+    <h2>Actualités et activités</h2>
+
+    <div class="notice">
+      <h3>Bienvenue sur notre site !</h3>
+      <p>Les prochaines actualités et activités de l'Amicale seront publiées ici.</p>
+    </div>
+  </section>
+
+  <section class="section" id="suggestions">
+    <h2>Proposer une idée</h2>
+    <p style="text-align:center; margin-bottom:15px;">
+      Chaque élève peut proposer une idée pour améliorer la vie scolaire.
+    </p>
+
+    <form id="suggestion-form">
+      <label for="nom">Ton nom</label>
+      <input id="nom" type="text" placeholder="Ton nom" required>
+
+      <label for="message">Ta suggestion</label>
+      <textarea id="message" placeholder="Écris ton idée ici..." required></textarea>
+
+      <button type="submit">Envoyer ma suggestion</button>
+      <p id="form-message"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Amicale des Élèves</p>
+    <p>Unis pour agir, ensemble pour réussir.</p>
+    <p><a href="#accueil">Retour en haut</a></p>
+  </footer>
+
+  <script>
+    document.getElementById("suggestion-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("form-message").textContent =
+        "Le formulaire sera activé après la connexion à la base de données.";
+    });
+  </script>
+
+</body>
+</html>
