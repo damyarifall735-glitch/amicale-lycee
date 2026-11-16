@@ -265,6 +265,7 @@
   </footer>
 
   
+
 <script type="module">
   import { supabase } from './supabase.js';
 
@@ -277,14 +278,14 @@
     const nom = document.getElementById('nom').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    messageInfo.textContent = "Erreur : " + error.message ;
+    messageInfo.textContent = 'Envoi en cours...';
 
     const { error } = await supabase
       .from('suggestions')
       .insert([{ name: nom, message: message }]);
 
     if (error) {
-      messageInfo.textContent = "Erreur lors de l'envoi. Réessaie.";
+      messageInfo.textContent = 'Erreur : ' + error.message;
       console.error(error);
       return;
     }
@@ -293,6 +294,7 @@
     form.reset();
   });
 </script>
+  
 
 </body>
 </html>
